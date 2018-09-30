@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Lobby</title>
+    <script type="text/javascript" src="js/wgo/wgo.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="js/client.js"></script>
+</head>
+<body id="lobbyBody">
+    <div id="chatDiv">
+        <ul id="messages" style="list-style-type: none">
+        </ul>
+        <form action="">
+            <input id="m" autocomplete="off" /><button id="chatBtn" >Send</button>
+        </form>
+    </div>
+    <div id="game">
+        <div id="gameArea" style="display: none;">
+            <select id="tool" style=" margin-bottom: 10px;">
+                <option value="black" selected>Black stone</option>
+                    <option value="white">White stone</option>
+                    <option value="SQ">Square</option>
+                    <option value="TR">Triangle</option>
+                    <option value="CR">Circle</option>
+                    <option value="remove">Remove</option>
+            </select>
+            <div id="board">
+
+            </div>
+        </div>
+        <div id="lobbyWrapper">
+            <p id="lobbyP">Please enter guest Username:</p>
+            <input class="regInput" id="userName" type="text">
+            <br>
+            <br>
+                <button class="lobbyBtn" id="findMatchBtn">Find Match</button>   
+        </div>
+    </div>
+</body>
+</html>

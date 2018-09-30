@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atari</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+     integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" 
+     crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/client.js" ></script>
+</head>
+<body>
+    <div id="homeBox">
+           <h1 id="h1Name">ATARI</h1> 
+    </div>
+    <div id="mainHomeDiv">
+        <div id="menuDiv">
+            <button class="menuBtn" id="lobbyBtn"><span id="matchSpan">Find Match</span><i id="matchIcon" class="fas fa-search fa-lg"></i></button>
+            <button class="menuBtn" class="toHomeBtn" id="homeBtn"><span id="homeSpan" >Home</span><i id="homeIcon" class="fas fa-home fa-lg"></i></button>
+            <button class="menuBtn" id="guideBtn"><span id="guideSpan">Go Guides</span><i id="guideIcon" class="fas fa-book fa-lg"></i></button> 
+        </div>
+        <div id="menuDiv2">
+            <button class="menuBtn" id="logInBtn"><span id="logInSpan">Log In</span><i id="logInIcon" class="fas fa-sign-in-alt fa-lg"></i></button>
+            <button class="menuBtn" id="aboutBtn"><span id="aboutSpan">About</span></button> 
+            <button class="menuBtn" id="createBtn"><span id="createSpan">Create Account</span><i id="createIcon" class="fas fa-address-card fa-lg"></i></button> 
+        </div>
+    </div>
+    <div id="logInOverlay">
+        <div id="logInForm">
+            <H1 class="h1Overlay">Login</H1>
+            username:
+            <br>
+            <input id="userNameLogIn" class="regInput" type="text" type="text" name="userName" autocomplete="off">
+            <br>
+            <br>
+            password:
+            <br>
+            <input id="passwordLogIn" class="regInput" type="password" name="password" autocomplete="off">
+            <br>
+            <br>
+            <button id="logInFormBtn" class="regBtn" type="submit" value="submit">Submit</button> <button id="backLogInBtn" class="regBtn" type="button">Back</button>
+        </div>
+    </div>
+    <div id="registerOverlay">
+            <form id="registerForm" action="/register" method="POST" enctype="application/x-www-form-urlencoded">
+                <h1 class="h1Overlay">Registration</h1>
+                    First Name: 
+                    <br>
+                    <input class="regInput" type="text" name="fName" autocomplete="off">
+                    <br>
+                    <br>
+                    Last Name: 
+                    <br>
+                    <input class="regInput" type="text" name="lName" autocomplete="off">
+                    <br>
+                    <br>
+                    Username:
+                    <br>
+                    <input class="regInput" type="text" name="userName" autocomplete="off">
+                    <br>
+                    <br> 
+                    Email: 
+                    <br>
+                    <input class="regInput" type="text" name="email" autocomplete="off">
+                    <br>
+                    <br>
+                    Password:
+                    <br>
+                    <input class="regInput" type="text" name="password" autocomplete="off">
+                    <br>
+                    <br>
+                <button id="submitForm" class="regBtn" type="submit" value="submit">Submit</button> <button id="backOverlayBtn" class="regBtn" type="button">Back</button>
+                </form>
+        </div> 
+        <div id="playerInfo">
+            <h2 id="playerh2">Player Information:</h2>
+            <ul id="infoList" style="list-style-type: none;">
+            </ul>           
+        </div>       
+</body>
+</html>

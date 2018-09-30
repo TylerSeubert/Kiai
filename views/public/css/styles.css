@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+}
+h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 26pt;
+    color: black;
+}
+.h1Overlay{
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.menuBtn,.toHomeBtn{
+    font-family: 'Cinzel Decorative', cursive;
+    background-color: white;
+    color: black;
+    border-radius: 37.5px;
+    border-style: solid;
+    border-color: black;
+    width: 75px;
+    height: 75px;
+    font-size: 14pt;
+    transition: 2s;
+}
+#lobbyBody{
+    background-color: black;
+    transition: 2s;
+}
+#playerInfo{
+    color: purple;
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive;
+    display: none;
+    position: fixed;
+    transition: 2s;
+    font-size: 16pt;
+    top: 13%;
+    left: 2.5%;
+}
+.lobbyBtn{
+    font-family: 'Cinzel Decorative', cursive;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    font-size: 14pt;
+    transition: 2s;
+}
+.lobbyBtn:hover{
+    background-color: black;
+    color: white; 
+    border-width: 2px;
+    border-color: grey;
+    cursor: pointer;
+}
+.toHomeBtn:hover{
+    background-color: black;
+    color: white; 
+    border-width: 2px;
+    border-color: grey;
+    cursor: pointer;
+}
+
+#registerForm,#logInForm{
+    position: absolute;
+    display: block;
+    top: 8%;
+    left: 42.5%;
+    font-size: 16pt;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#lobbyP{
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+}
+#gameArea{
+    font-family: 'Cinzel Decorative', cursive;
+    display: "none";
+}
+#game{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 18pt;
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    top: 12%;
+    left: 25%;
+}
+#registerOverlay,#logInOverlay{
+    position: fixed;
+    width: 100%;
+    height:  0%;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .90;
+    z-index: 2;
+    transition: 2s;
+    overflow-y: hidden; 
+}
+#aboutBtn{
+    background-color: black;
+    transition: 2s;
+    font-size: 14pt;
+}
+#aboutBtn:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+#matchSpan,#homeSpan,#guideSpan,#createSpan,#aboutSpan,#logInSpan{
+    display: none;
+}
+.menuBtn:hover{
+    background-color: black;
+    color: white; 
+    border-width: 2px;
+    border-color: grey;
+    cursor: pointer;
+    width: 250px;
+}
+#display{
+    border-style: dotted;
+    border-color: blue;
+    width: 70%;
+}
+.headerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+    color: grey;
+}
+#lobbyWrapper{
+    height: 100%;
+    width: 100%;
+}
+#chatDiv{
+    display: none;
+    height: 75%;
+    width: 20%;
+    color: black;
+    background-color: white;
+    flex-direction: column;
+    border-style: ridge;
+    border-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#m{
+    width: 75%;
+    border-width: 3px;
+    border-color: black;
+    position: absolute;
+    bottom: 0;
+    color: black;
+}
+#chatBtn{
+    border-style: solid;
+    border-width: 3px; 
+    border-color: black;
+    background-color: white;
+    width: 22.7%;
+    border-radius: 0;
+    border-width: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#menuDiv{
+    margin-top: 20px;
+    height: 500px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#homeBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#mainHomeDiv{
+    display: flex;
+    flex-direction: row;   
+    margin-left: 33%;
+}
+#menuDiv2{
+    margin-top: 20px;
+    height: 500px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.regBtn{
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    color: black;
+    font-size: 16pt;
+    border-radius: 8px;
+}
+.regInput{
+    border-style: ridge;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+}
